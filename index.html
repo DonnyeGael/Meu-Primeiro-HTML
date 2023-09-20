@@ -1,48 +1,70 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro html</title> 
-<link rel="stylesheet" href="style.css"> 
-</head> 
 
-<body id="wrap">
-    <div>
-        <header>
-            <h1>RED MOUNTAIN</h1>
-            <img src="./logo site.jpg" alt="Sorry,Imagem Indisponível">
-            <nav>
-                <h1>Olá, seja bem vindo ao meu primeiro HTML ;) 
-                </h1>
-                <H1>(Hello, wellcome to my first HTML)</H1>
-              <ul>
-                <li> 
-                    <a href="https://png.pngtree.com/thumb_back/fw800/back_pic/03/62/76/6457ab3c1319347.jpg"target="blank"target=>MONTANHA DO SOL</a>
-                </li>
-              </ul> 
-              <UL>
-                <LI>
-                    <a href="https://www.w3schools.com/html/html_editors.asp"target="blank">TESTE SEU HTML </a> 
-                </LI>
-              </UL> 
-              <UL>
-                <LI><a href="https://www.totvs.com/blog/developers/o-que-e-html/#:~:text=Sigla%20para%20HyperText%20Markup%20Language,v%C3%ADdeos%2C%20por%20meio%20dos%20hipertextos."target="blank">O QUE É HTML ?</a>
-                </LI>
-              </UL>
-            </nav>
-        </header>
-    </div>
-    <div>
-        <img src="https://cdn.dribbble.com/users/411683/screenshots/3225003/dribbble_version.png" alt="imagem de uma montanha">
-    </div>
-    <div>
-        <form action="">
-            <label for="nome">Digite seu nome:</label>
-            <input type="text" name="nome" id="nome">
-            <input type="submit" value="Enviar">
-        </form> 
-    </div>
-    
-</body>
+<html>
+    <head>
+        <style>
+            display: flex;
+
+justify-content: center; align-items: center; height: 100vh;
+
+text-decoration: none;
+
+ {
+
+}
+
+.box {
+font-size: 20px;
+color: white; height: 250px;
+width: 350px;
+border-radius: 10px; background: #191919;
+flex-direction: column; display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.buttons-container {
+display: flex;
+justify-content: space-around;
+height: 70px; width: 150px;
+} 
+
+button {
+height: 30px;
+width: 50px;
+background: white; border-radius: 5px;
+color: blue; font-weight: 600;
+}
+
+
+        </style>
+    </head> 
+    <body>
+        <div class="box">
+
+            <p>Something today?</p>
+            
+            <div class="buttons-container"> <button>
+            
+            <a href="https://www.youtube.com/shorts/L3W0V9BFgfg">Sim</a>
+            
+            </button>
+            
+            <button id="no">Não</button>
+            
+            </div> </div>
+            
+    </body> 
+    <script>
+        let button = document.getElementById('no');
+let height = window.innerHeight - 50;
+let width = window.innerWidth - 50;
+
+button.addEventListener('mouseover', function () {
+ button.style.position="absolute";
+ button.style.top = Math.random() * height + "px";
+ button.syle.left = Math.random() * width + "px";
+
+})
+
+    </script>
 </html>
